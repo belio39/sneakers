@@ -3,6 +3,10 @@
   margin: 0;
   list-style-type: none;
 }
+/* body {
+  margin-left: 100px;
+  margin-right: 100px;
+} */
 nav {
   width: 100%;
   height: 80px;
@@ -59,7 +63,7 @@ nav ul li {
 .thumbnail a img {
   width: 50px;
   height: 50px;
-  margin: 0 23px;
+  margin: 20px 23px;
   border-radius: 5px;
 }
 
@@ -159,4 +163,112 @@ nav ul li {
 .img-item-button {
   width: 10px;
   height: 10px;
+}
+.menu {
+  display: none;
+}
+.next-prev {
+  display: none;
+}
+
+/* .menu img {
+  display: none;
+  font-size: 30px;
+} */
+
+@media (max-width: 375px) {
+  .menu {
+    display: block;
+    align-items: center;
+  }
+  .menu img {
+    margin: 33px;
+  }
+  nav ul {
+    display: none;
+  }
+  .profile img {
+    width: 30px;
+    height: 30px;
+  }
+  .logo {
+    margin: 0 0;
+  }
+  .productImg img {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+  }
+  .single-page-item {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  .item-details h1 {
+    font-size: 25px;
+  }
+  .next-prev {
+    margin-top: -151px;
+    margin-bottom: 151px;
+    display: flex;
+    position: absolute;
+    /* justify-content: space-between; */
+  }
+  .thumbnail {
+    display: none;
+  }
+  .item-detail-card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .cart-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .discount h3 {
+    margin-left: 140px;
+  }
+  .addToCart {
+    width: 100%;
+    display: flex;
+    margin-right: 0;
+    justify-content: space-around;
+  }
+  .minus {
+    width: 0;
+  }
+  .plus {
+    width: 0;
+  }
+  .numberPlace {
+    width: 0;
+  }
+  .cart-button button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 100px;
+  }
+  .cart-button {
+    width: 100%;
+    margin: 15px 3px;
+  }
+  .proceedToCart {
+    width: 100%;
+  }
+  .img-item-button {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 375px) and (max-width: 1440px) {
 }
